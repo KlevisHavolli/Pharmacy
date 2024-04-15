@@ -6,8 +6,20 @@ import {
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>
+     <Navbar/>
+     <Home/>
+     <Footer/>
+    </div>,
+  },
+  
+
+  
   {
     path: "/",
     element: <div>This is HomePage!</div>,
